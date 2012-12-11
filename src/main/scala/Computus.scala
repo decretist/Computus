@@ -174,9 +174,9 @@ class Computus extends HttpServlet {
      * fourteenth Moon of Easter.
      * Bede, DTR 60
      */
-    if (e < 14) {offset = 14 - e}
-    else if (e == 14) {offset = 0}
-    else if (e == 15) {offset = -1}
+    if (e < 14) offset = 14 - e
+    else if (e == 14) offset = 0
+    else if (e == 15) offset = -1
     /*
      * But if the epacts are more than 15, let him count upwards day by day up
      * to 30, which is the end of this month. Then beginning at the first Moon
@@ -184,7 +184,7 @@ class Computus extends HttpServlet {
      * ordained for the Paschal rites.
      * Bede, DTR 60
      */
-    else if (e > 15) {offset = (30 - e) + 14}
+    else if (e > 15) offset = (30 - e) + 14
     val daysAfterProper = Array(
       "March 21", "March 22", "", "March 24", "March 25", "", "March 27", "",
       "March 29", "March 30", "", "April  1", "April  2", "", "April  4",
