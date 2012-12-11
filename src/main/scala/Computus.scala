@@ -36,7 +36,7 @@ class Computus extends HttpServlet {
           <title>Computus Simulation Back-end</title>
         </head>
         <body>
-          <table border="1">
+          <table border="1" style="border-collapse: collapse;">
             <tr>
               <th>Year</th>
               <th>Indiction</th>
