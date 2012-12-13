@@ -45,9 +45,9 @@ class Computus extends HttpServlet {
               <th bgcolor="a0a0a0">19-Year Cycle</th>
               <th bgcolor="a0a0a0">Golden Number</th>
               <th>Lunar Cycle</th>
-              <th>Paschal Full Moon (Bede)</th>
-              <th bgcolor="a0a0a0">Paschal Full Moon (Table)</th>
-              <th bgcolor="a0a0a0">Paschal Full Moon (Mosshammer)</th>
+              <th>Paschal Full Moon<br/>(Bede)</th>
+              <th bgcolor="a0a0a0">Paschal Full Moon<br/>(Table)</th>
+              <th bgcolor="a0a0a0">Paschal Full Moon<br/>(Mosshammer)</th>
               <th>Easter</th>
             </tr>
             { for (year <- startDate to endDate) yield {
